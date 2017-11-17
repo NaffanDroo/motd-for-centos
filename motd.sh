@@ -2,9 +2,11 @@
 #
 DISTRIB_DESCRIPTION=$(cat /etc/centos-release)
 
+#change 'CentOS' to something else, if you want to name your server or display a phrase
+DISPLAYNAME=CentOS
 LOLCAT=/usr/local/bin/lolcat
 
-figlet blogs -c | $LOLCAT -f
+figlet $DISPLAYNAME -c | $LOLCAT -f
 printf "\n"
 
 printf "\t%s \tKernel: %s\n" "$DISTRIB_DESCRIPTION" "$(uname -r)"
