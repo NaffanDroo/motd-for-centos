@@ -15,7 +15,7 @@
 	Processes:	82			
 
 
-  System is up to date
+	System is up to date
 
 
 
@@ -26,6 +26,7 @@ The script assumes you have `lolcat` and `figlet` packages installed.  If not, p
 
 **Install dependencies**
 ```
+yum install figlet
 yum install rubygems
 gem install lolcat
 ```
