@@ -1,4 +1,24 @@
 # Ubuntu-like Message of the Day for CentOS
+ / ___|___ _ __ | |_ / _ \/ ___| 
+| |   / _ \ '_ \| __| | | \___ \ 
+| |__|  __/ | | | |_| |_| |___) |
+ \____\___|_| |_|\__|\___/|____/ 
+                                 
+
+	CentOS Linux release 7.4.1708 (Core)  	Kernel: 3.10.0-693.2.2.el7.x86_64
+
+	System information as of: Fri Nov 17 12:54:05 CST 2017
+
+	System Load:	0.09, 0.04, 0.05	System Uptime:		24 days 23 hours 45 min 9 sec
+	Memory Usage:	0.0%			Swap Usage:		2.3%
+	Usage:		15G			SFTP Accounts:		1
+	Processes:	82			
+
+
+  System is up to date
+
+
+
 Auto-check for updates and have them emailed, with a useless stylized & colored figlet screen - just because.
 The script assumes you have `lolcat` and `figlet` packages installed.  If not, proceed with the directions below.
 
