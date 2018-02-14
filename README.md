@@ -40,7 +40,7 @@ mkdir /etc/update-motd.d/
 
 **make the update script executable**
 ```
-hmod +x /path/to/update-check.sh
+chmod +x /path/to/update-check.sh
 ```
 
 **edit the profile to assign a motd**
