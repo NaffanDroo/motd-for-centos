@@ -3,7 +3,7 @@ Automate checking for updates and have them emailed, with a useless stylized & c
 
 Will also work on other Redhat-based systems like Fedora and derivatives.
 
-![centos motd screenshot](https://raw.githubusercontent.com/z0m8i3/motd-for-centos/master/img/centos-motd-screenshot.png)
+![centos motd screenshot](img/centos-motd-screenshot.png)
 
 *Dependencies*
 * figlet
@@ -27,8 +27,8 @@ mkdir /etc/update-motd.d/
 ```
 
 **Place the following scripts in your preferred directory (and take note of their path), ex: /home/user/motd/**
-* [update-check.sh](motd-for-centos/blob/master/update-check.sh)
-* [motd.sh](motd-for-centos/blob/master/motd.sh)
+* [update-check.sh](update-check.sh)
+* [motd.sh](motd.sh)
 
 **Make the scripts executable**
 ```bash
