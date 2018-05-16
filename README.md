@@ -1,31 +1,38 @@
 # Ubuntu-like Message of the Day for CentOS
 Automate checking for updates and have them emailed, with a useless stylized & colored figlet screen - just because.
-Will also work on other Redhat-based systems like Fedora and deriatives.
+
+Will also work on other Redhat-based systems like Fedora and derivatives.
 
 ![centos motd screenshot](https://raw.githubusercontent.com/z0m8i3/motd-for-centos/master/img/centos-motd-screenshot.png)
 
 *Dependencies*
 * figlet
 * lolcat
+* EPEL Repository
 
+If you do not have EPEL repo enabled (or are unsure if you do), first run (as root/sudo):
+```bash
+yum install epel-release
+```
+Then, install dependencies:
 ```bash
 yum install figlet
 yum install rubygems
 gem install lolcat
 ```
 
-**Mimic the ubuntu setup**
+**Mimic the Ubuntu setup**
 ```bash
 mkdir /etc/update-motd.d/
 ```
 
-**Place the following scripts in your preferred directory, ex: /home/user/motd/**
-* [update-check.sh](https://github.com/z0m8i3/motd-for-centos/blob/master/update-check.sh)
-* [motd.sh](https://github.com/z0m8i3/motd-for-centos/blob/master/motd.sh)
+**Place the following scripts in your preferred directory (and take note of their path), ex: /home/user/motd/**
+* [update-check.sh](motd-for-centos/blob/master/update-check.sh)
+* [motd.sh](motd-for-centos/blob/master/motd.sh)
 
 **Make the scripts executable**
 ```bash
-cd /home/user/motd/ && chmod +x update-check.sh && chmod +x motd.sh
+chmod +x update-check.sh && chmod +x motd.sh
 ```
 
 **Edit the profile to assign a motd**
