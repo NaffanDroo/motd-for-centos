@@ -3,7 +3,7 @@
 DISTRIB_DESCRIPTION=$(cat /etc/centos-release)
 
 #change 'CentOS' to something else, if you want to name your server or display a phrase
-DISPLAYNAME=$(hostname)
+DISPLAYNAME=$(hostname | python -c "import sys; print(sys.stdin.read().strip().lower().capitalize())")
 LOLCAT=/usr/local/bin/lolcat #whereis lolcat if your system put it somewhere else
 
 figlet $DISPLAYNAME -c | $LOLCAT -f
