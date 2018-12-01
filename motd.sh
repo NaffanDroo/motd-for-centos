@@ -3,7 +3,7 @@
 DISTRIB_DESCRIPTION=$(cat /etc/centos-release)
 
 #change 'CentOS' to something else, if you want to name your server or display a phrase
-DISPLAYNAME=CentOS
+DISPLAYNAME=$(hostname)
 LOLCAT=/usr/local/bin/lolcat #whereis lolcat if your system put it somewhere else
 
 figlet $DISPLAYNAME -c | $LOLCAT -f
@@ -29,8 +29,8 @@ upSecs=$((uptime%60))
 root_usage=$(df -h / | awk '/\// {print $4}'|grep -v "^$")
 
 # memory
-memory_usage=$(free -t -g | grep Total | awk '{print $3;}')
-total_memory=$(free -t -g | grep "Mem" | awk '{print $2" GB";}')
+memory_usage=$(free -t -m | grep Total | awk '{print $3;}')
+total_memory=$(free -t -m | grep "Mem" | awk '{print $2" MB";}')
 swap_usage=$(free -m | awk '/Swap/ { printf("%3.1f%%", $3/$2*100) }')
 
 # users
