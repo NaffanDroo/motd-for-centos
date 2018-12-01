@@ -41,7 +41,7 @@ processes=$(ps aux | wc -l)
 
 printf "\tSystem information as of: %s\n\n" "$date"
 printf "\tSystem Load:\t%s %s %s\tSystem Uptime:\t\t%s days %s hours %s min %s sec\n" "$LOAD1", "$LOAD5", "$LOAD15" "$upDays" "$upHours" "$upMins" "$upSecs"
-printf "\tMemory Usage:\t%s\t\t\tSwap Usage:\t\t%s\n" "$memory_usage"/"$total_memory" "$swap_usage"
+printf "\tMemory Usage:\t%s\t\tSwap Usage:\t\t%s\n" "$memory_usage"/"$total_memory" "$swap_usage"
 printf "\tUsage:\t\t%s\t\t\tSFTP Accounts:\t\t%s\n" "$root_usage" "$users"
 printf "\tProcesses:\t%s\t\t\t\n\n" "$processes"
 
